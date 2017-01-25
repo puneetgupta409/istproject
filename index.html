@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Mogra" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: url("http://i.imgur.com/gAcsRiQ.jpg");
+  background-size: cover;
+}
+div {
+  height: 300px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 110px;
+  color:#13ABDC;
+  font-family: 'Mogra', cursive;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color:#13ABDC;
+   font-size: 50px;
+  font-family: 'Mogra', cursive;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  color:#13ABDC;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .10s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+   font-family: 'Patua One', cursive;
+}
+
+small {
+  opacity: 0;
+  font-family: 'Patua One', cursive;
+  color:#13ABDC;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("http://i.imgur.com/KKaqG7S.jpg");
+}
+.second{
+  background-image: url("http://i.imgur.com/HVKaiej.jpg");
+}
+.third{
+  background-image: url("http://i.imgur.com/9qb5ZoF.jpg");
+}
+
+.fourth{
+  background-image: url("http://i.imgur.com/BTpX832.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>HOUSEIFY</h1>
+<h2>A REAL STATE</h2>
+<div class="first">
+  <p>ITALY  <span class="price">$7,8594,623</span><br />
+  <small>Savor spectacular panoramic ocean views, stroll to La Jolla Shores Beach or Shores Village, and enjoy the quiet, easy-access cul-de-sac location of this appx .95 acre classic in original condition. Ready to create your dream? </small></p>
+</div>
+
+<div class="second">
+  <p>SINGAPORE <span class="price">$2,2784,598</span><br />
+  <small>This oft-admired landmark beauty offers not only extreme curb appeal but endless comfort and expansive upgrades for turn-key enjoyment. With easy access to Village, schools, this exquisite Cape Cod welcomes guests to formal living areas with lovely woodwork and handcrafted classic cabinetry and detached guest quarters plus expansive grounds with lawn,spa and sport court.</small></p>
+</div>
+
+<div class="third">
+  <p>AMERICA<span class="price">$2,5687,459</span><br />
+  <small>First EVER chance to buy! In a prime Lower Muirlands location within steps to schools and a stroll to WindanSea Beach and Village, this vast, sprawling family classic offers endless windows and French doors opening to grounds with a grand swimming pool with patios and lawn. Light, bright living areas include main level master, separate entrance guest/in-law quarters with kitchen, extra finished attic and basement storage. Unique opportunity to update! Super sweet!
+</small></p>
+</div>
+
+
+<div class="fourth">
+  <p>AUSTRALIA <span class="price">$8,5764,923</span><br />
+  <small>With seamless flow through floor-to-ceiling glass doors to expansive outdoor grounds with pool, this classic, bright one-level ranch offers luxurious, easy living in a fantastic location near UCSD, La Jolla Shores Beach, and freeway access points. Beautifully updated and modernized with a fabulous state-of-the-art kitchen and custom design appointments, the La Jolla ambience of this lovely, spacious home reads "warm contemporary," offering a gracious welcome to friends and family.</small></p>
+</div>
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
